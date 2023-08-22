@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Data Source(.txt,.csv,.json,.xml,API,RESTAPI)</h3>
+    <h3>Before Ajax there is only one Application is HTTP</h3>
+    <h3>Better Application the Ajax is fetch(), axios(), get() </h3>
+    <h3>Create XMLHttpRequest:</h3>
+    <pre>let xhr = new XMLHttpRequest();</pre>
+
+    <h3>Initialize it, usually right after new XMLHttpRequest:</h3>
+    <pre>xhr.open(method, URL, [async, user, password])</pre>
+    <p>This method specifies the main parameters of the request:
+        <br /><b>method:</b> – HTTP-method. Usually "GET" or "POST".
+        <br /><b>URL:</b> – the URL to request, a string, can be URL object.
+        <br /><b>async</b>: – if explicitly set to false, then the request is synchronous,
+        <br /><b>user, password</b>: – login and password for basic HTTP auth (if required).
+    </p>
+    <h5>Please note that open call, contrary to its name, does not open the connection. It only configures the request,
+        but the network activity only starts with the call of send.</h5>
+    <h3>Send it out.</h3>
+    <pre>xhr.send([body])</pre>
+    <p>This method <b>opens</b> the <b>connection</b> and <b>sends</b> the <b>request</b> to server. The optional body
+        parameter
+        contains the
+        request body.
+        <br />
+        Some request methods like GET do not have a body. And some of them like POST use body to send the data to the
+        server. We’ll see examples of that later.
+    </p>
+
+    <input type='submit' value='Get Text Value' id='btntxt'></input>
+</body>
+<script src='./js/ajax.js'></script>
+
+</html>

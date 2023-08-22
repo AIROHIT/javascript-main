@@ -1,0 +1,13 @@
+GET http://jsonplaceholder.typicode.com/posts 
+
+/*
+ * GET home page.
+ */
+
+POST http://jsonplaceholder.typicode.com/posts 
+Content-Type: application/json
+
+{
+    "title":"New Post By Debasish",
+    "body":"This is new Post Debasish."
+}
